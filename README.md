@@ -1,27 +1,30 @@
-# AngularTodoTasks
+# Angular TODO list
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.4.
+Project intended for testing with Angular. This includes basic and advanced concepts of Angular, such as lazy load, Observables, and services.
 
-## Development server
+## prerequisites
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Nodejs: 12.x;
 
-## Code scaffolding
+Angular: 10.x;
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation and running locally
 
-## Build
+To install project dependencies, run the following command:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+`npm install`
 
-## Running unit tests
+After that, just run the command `npx ng serve` to compile and run the server. The project will run at [http://localhost:4200](http://localhost:4200).
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Project structure
 
-## Running end-to-end tests
+The project folder structure, in general, follows the standard already established by Angular. However, an addition was made to this structure in order to make the project more organized. Inside the `modules` folder we have subfolders that refer to Angular modules. The `pages` folder has subfolders related to modules responsible for each route of the application. The `services` contains the services and `models` contains the application domain models and auxilar models used inside components.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Generating artifacts
 
-## Further help
+To generate project artifacts in development mode, run the `npx ng build` command. The execution result will be in the `dist` folder in the project root. This can be served by the web server of your choice.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+To compile the project in production mode, simply add the `--prod` parameter to the `npx ng build` command.
+
+## Improvement points
+- Perform unit tests
