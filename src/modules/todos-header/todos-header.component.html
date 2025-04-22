@@ -1,0 +1,11 @@
+<mat-form-field class="add-todo-input" appearance="fill">
+  <mat-label>Add a new task</mat-label>
+  <input 
+    matInput 
+    autofocus 
+    [value]="inputValue" 
+    (input)="changeInputValue($event)"
+    (keyup.enter)="addTodo()"
+  />
+</mat-form-field>
+<button mat-raised-button color="primary" (click)="addTodo()">Add Task</button>

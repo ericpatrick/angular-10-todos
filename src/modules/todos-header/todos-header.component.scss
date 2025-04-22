@@ -1,0 +1,17 @@
+@import 'variables';
+
+:host {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: $todo-home-max-width;
+}
+
+mat-form-field {
+  margin-right: 0.7rem;
+  flex: 1;
+}
+
+button {
+  margin-bottom: 1.34375em;
+}

@@ -1,0 +1,8 @@
+@import 'variables';
+
+:host {
+  display: flex;
+  max-width: $todo-home-max-width;
+  justify-content: center;
+  margin-top: 1.34375em;
+}

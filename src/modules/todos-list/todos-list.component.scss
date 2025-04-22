@@ -1,0 +1,10 @@
+@import 'variables';
+
+:host {
+  display: block;
+  max-width: $todo-home-max-width;
+}
+
+.no-task-message {
+  font-size: 1.3rem;
+}

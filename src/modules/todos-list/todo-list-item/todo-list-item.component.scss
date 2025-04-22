@@ -1,0 +1,13 @@
+:host {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+mat-checkbox {
+  flex: 1;
+}
+
+.todo-completed {
+  text-decoration: line-through;
+}

@@ -1,0 +1,13 @@
+<mat-list *ngIf="hasTodos$ | async ; else no_todos">
+  <mat-list-item id="todo-list-item" *ngFor="let todo of todoList$ | async; trackBy: trackByFn">
+    <app-todo-list-item 
+      [todo]="todo"
+      (toggleTodo)="toggleTodo($event)"
+      (removeTodo)="removeTodo($event)"
+    ></app-todo-list-item>
+  </mat-list-item>
+ </mat-list>
+ 
+ <ng-template #no_todos>
+  <p class="no-task-message">No task found with this filter</p>
+ </ng-template>
